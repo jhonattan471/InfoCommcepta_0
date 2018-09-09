@@ -1,7 +1,7 @@
-<div class="_main_container">
-  <div class="_main_content">
-    <div class="_header_container">
-      <div class="_header_content">
+<div class="main_container">
+  <div class="main_content">
+    <div class="header_container">
+      <div class="header_content">
         <img class="logo " src="assets/spacebox.png" alt="space box logo">
         <div class="botoes">
           <div class="botao">EMPRESA</div>
@@ -10,8 +10,8 @@
         </div>
       </div>
     </div>
-    <div class="_card_selected_container">
-      <div class="_card_selected_content">
+    <div class="card_selected_container">
+      <div class="card_selected_content">
         <div class="img_container" [ngStyle]="{'background-image':'url('+ 'assets/users/' + selected.foto+')'}">
 
         </div>
@@ -33,10 +33,10 @@
         </div>
       </div>
     </div>
-    <div class="_cards_container  ">
-      <div class="_cards_content ">
+    <div class="cards_container  ">
+      <div class="cards_content ">
         <div *ngFor="let user of dados">
-          <div (click)="selected = user" class="_card " [ngClass]="{'selected': user.id === selected.id }">
+          <div (click)="selected = user" class="card " [ngClass]="{'selected': user.id === selected.id }">
             <div class="img_container" [ngStyle]="{'background-image':'url('+ 'assets/users/' + user.foto+')'}">
               <div class="elipse">
                 {{user.id}}
@@ -52,9 +52,7 @@
               </div>
             </div>
           </div>
-          <!-- increase index +3-->
         </div>
-
       </div>
     </div>
   </div>
