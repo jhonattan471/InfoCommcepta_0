@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-    dados = [ 
+  dados = [
     {
       "id": 1,
       "foto": "foto-alberto.jpg",
@@ -73,13 +73,4 @@ export class AppComponent {
     }
   ]
   selected = this.dados[0];
-
-  parseUsers(columns) {
-    let dadosAux = JSON.parse(JSON.stringify(this.dados));
-    let currAmostras = [];
-    for (let i = 0; i < columns; i++) {
-      
-    }
-  }
-
 }
