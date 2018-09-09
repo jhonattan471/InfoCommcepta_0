@@ -73,4 +73,10 @@ export class AppComponent {
     }
   ]
   selected = this.dados[0];
+<<<<<<< HEAD
+=======
+
+  
+
+>>>>>>> 1acfe27de2203af9d97bd01b10f608c6af02c459
 }
